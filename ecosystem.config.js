@@ -26,18 +26,18 @@ module.exports = {
         // GIT remote/branch
         ref: "origin/master",
         // GIT remote
-        repo: "git@github.com:Username/repository.git",
+        repo: "git@github.com:AlphaPig404/pm2.git",
         // path in the server
-        path: "/var/www/my-repository",
+        path: "/var/www/test-pm2",
         // Pre-setup command or path to a script on your local machine
-        pre-setup: "apt-get install git ; ls -la",
+        'pre-setup': "echo 'pre-setup'",
         // Post-setup commands or path to a script on the host machine
         // eg: placing configurations in the shared dir etc
-        post-setup: "ls -la",
+        'post-setup': "echo 'post-setup'",
         // pre-deploy action
-        pre-deploy-local: "echo 'This is a local executed command'",
+        'pre-deploy-local': "echo 'This is a local executed command'",
         // post-deploy action
-        post-deploy: "npm install",
+        'post-deploy': "npm install",
       },
     }
   }
